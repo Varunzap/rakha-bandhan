@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For My Sister • Raksha Bandhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@1,500&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="progress" id="progress"><i></i></div>
+
+  <main id="app">
+    <!-- 01 -->
+    <section class="scene scene-1 active">
+      <div class="ornaments"></div>
+      <div class="intro-copy">
+        <span class="eyebrow">A little celebration of us</span>
+        <h1><small>Happy</small>Raksha<br><em>Bandhan</em></h1>
+        <p>Some bonds are tied with a thread. Ours is tied with a lifetime of memories.</p>
+      </div>
+
+      <button class="hero-rakhi" id="rakhi1" aria-label="Open the Rakhi">
+        <span class="halo"></span>
+        <span class="thread t1"></span><span class="thread t2"></span>
+        <span class="rakhi">
+          <b class="ruby"></b>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </span>
+      </button>
+      <div class="tap-note"><span>✦</span> tap the rakhi <span>✦</span></div>
+    </section>
+
+    <!-- 02 -->
+    <section class="scene scene-2">
+      <div class="soft-glow"></div>
+      <button class="hero-rakhi center" id="rakhi2" aria-label="Click to open">
+        <span class="halo"></span>
+        <span class="rakhi large">
+          <b class="ruby"></b>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </span>
+      </button>
+      <div class="open-note">✦ &nbsp; CLICK TO OPEN &nbsp; ✦</div>
+    </section>
+
+    <!-- 03 -->
+    <section class="scene scene-3 framed">
+      <div class="frame"></div>
+      <header class="greeting">
+        <h2 id="typeTitle"></h2>
+        <p id="typeSub"></p>
+      </header>
+      <div class="memory">
+        <img src="YOUR_PHOTO_HERE.png" alt="Brother and sister">
+        <div class="wrist-rakhi"><span></span><b></b></div>
+      </div>
+      <button class="gold-btn hidden" id="next3">NEXT</button>
+    </section>
+
+    <!-- 04 -->
+    <section class="scene scene-4 framed">
+      <div class="frame"></div>
+      <div class="letter-intro">
+        <span class="eyebrow">A private little note</span>
+        <h2>A Letter,<br><em>Just For My Sister</em></h2>
+        <p>Tap the seal to open it.</p>
+      </div>
+      <button class="envelope" id="envelope" aria-label="Open letter">
+        <span class="paper"></span>
+        <span class="fold left"></span><span class="fold right"></span>
+        <span class="seal">✦</span>
+        <strong>FOR YOU</strong>
+      </button>
+    </section>
+
+    <!-- 05 final -->
+    <section class="scene scene-5">
+      <div class="final-glow"></div>
+      <article class="letter-card">
+        
+        <span class="mini-title">WITH LOVE, ALWAYS</span>
+        <h2 id="letterTitle"></h2>
+        <p class="subtitle" id="letterSub"></p>
+        <div class="letter-text" id="letterText"></div>
+        <div class="signature">— Your Brother ❤️</div><button class="gold-btn memories-btn" id="toMemories">OUR MEMORIES →</button>
+      </article>
+    </section>
+
+    <!-- 06 — MEMORIES -->
+    <section class="scene scene-6 memories-scene" id="memories">
+      <div class="memory-stars"></div>
+      <div class="memories-head">
+        <span class="eyebrow">Little moments, forever memories</span>
+        <h2>Our <em>Memories</em></h2>
+        <p>Five little frames from a lifetime of us.</p>
+      </div>
+
+      <div class="memory-slider" id="memorySlider">
+        <button class="memory-arrow prev" id="memPrev" aria-label="Previous memory">‹</button>
+        <div class="memory-track" id="memoryTrack">
+          <figure class="memory-card active"><img src="memory-1.jpg" alt="Memory 1"><figcaption>That silly day ❤️</figcaption></figure>
+          <figure class="memory-card"><img src="memory-2.jpg" alt="Memory 2"><figcaption>Always us ✨</figcaption></figure>
+          <figure class="memory-card"><img src="memory-3.jpg" alt="Memory 3"><figcaption>One of my favourites</figcaption></figure>
+          <figure class="memory-card"><img src="memory-4.jpg" alt="Memory 4"><figcaption>Little moments</figcaption></figure>
+          <figure class="memory-card"><img src="memory-5.jpg" alt="Memory 5"><figcaption>Forever a memory ❤️</figcaption></figure>
+        </div>
+        <button class="memory-arrow next" id="memNext" aria-label="Next memory">›</button>
+      </div>
+
+      <div class="memory-dots" id="memoryDots">
+        <button class="dot active" aria-label="Memory 1"></button>
+        <button class="dot" aria-label="Memory 2"></button>
+        <button class="dot" aria-label="Memory 3"></button>
+        <button class="dot" aria-label="Memory 4"></button>
+        <button class="dot" aria-label="Memory 5"></button>
+      </div>
+
+      <div class="memory-finish">Made with <span>♥</span> for my sister</div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
