@@ -48,3 +48,22 @@ Keep the filenames exactly the same. The Memories page supports:
 - Smooth slide/fade transitions
 
 After the letter, click "OUR MEMORIES →" to open the gallery.
+
+
+MEMORY PHOTOS ADDED
+-------------------
+The five uploaded photos are already placed with these exact names:
+memory-1.jpg
+memory-2.jpg
+memory-3.jpg
+memory-4.jpg
+memory-5.jpg
+
+No code changes are needed. Upload the whole folder contents to GitHub.
+
+
+FIXED:
+- "OUR MEMORIES →" now reliably opens the Memories page.
+- Removed the JavaScript null-reference that stopped the gallery script.
+- The five supplied photos are now included as memory-1.jpg through memory-5.jpg.
+- Arrow buttons, dots and mobile swipe work.

@@ -53,7 +53,7 @@ endless teasing, little fights, and the love that always stays.
   },250);
 };
 
-document.getElementById("close").onclick=()=>{ /* final screen stays final */ };
+const closeButton=document.getElementById("close"); if(closeButton) closeButton.onclick=()=>{};
 
 history.pushState(null,"",location.href);
 addEventListener("popstate",()=>history.pushState(null,"",location.href));
@@ -71,8 +71,8 @@ function showMemory(i){
   cards.forEach((card,n)=>card.classList.toggle("active",n===memoryIndex));
   dots.forEach((dot,n)=>dot.classList.toggle("active",n===memoryIndex));
 }
-document.getElementById("memPrev").onclick=()=>showMemory(memoryIndex-1);
-document.getElementById("memNext").onclick=()=>showMemory(memoryIndex+1);
+const memPrev=document.getElementById("memPrev"); if(memPrev) memPrev.onclick=()=>showMemory(memoryIndex-1);
+const memNext=document.getElementById("memNext"); if(memNext) memNext.onclick=()=>showMemory(memoryIndex+1);
 dots.forEach((d,i)=>d.onclick=()=>showMemory(i));
 
 let sx=0;
